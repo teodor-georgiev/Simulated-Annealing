@@ -345,7 +345,7 @@ class Simulated_Annealing(object):
         
 
 if __name__ == "__main__":
-    args = "instance_10_3_2.txt"
+    args = "instance_10_3_1.txt"
 
     inst = Instance(args)
     print("Loaded instance: {0}".format(inst))

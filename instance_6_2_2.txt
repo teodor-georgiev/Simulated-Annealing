@@ -1,0 +1,12 @@
+customers 6
+vehicles 2
+vehicle 20
+distance
+14 19 93 98 97 32 
+88 9 40 55 29 
+85 64 13 48 
+97 64 11 
+60 16 
+54 
+demand
+7 5 7 10 6 1

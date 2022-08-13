@@ -1,4 +1,4 @@
-## Simulated Annealing SA algorithm for the Vehicle Routing Problem (VRP)
+## Simulated Annealing (SA) algorithm for the Vehicle Routing Problem (VRP)
 
 The objective of the vehicle routing problem (VRP) is to minimize the total distance
 traveled of a fleet of vehicles that must visit a set of customers to satisfy their demands
@@ -11,7 +11,15 @@ for a product. In this case of the problem we have the following constraints and
 - The order of the customers on a route is not important
 - The objective is to minimize the sum of the distance covered by all vehicles
 
-In order to solve this problem we will be using a __metaheuristic__ known as Simulated Annealing (SA) which is a probabilistic technique for approximating the global optimum of a given function.
+To solve this problem, we will use a __metaheuristic__ known as Simulated Annealing (SA) which is a probabilistic technique for approximating the global optimum of a given function.
 
-## Greedy algorihm for the intial solution
-Before we start the SA algorithm we will first use a greedy heuristic to get a somewhat good iniial solution. The greedy heuristic implemented here tries at each step to assign the closest customer to one vehicle until there is no more space left. If there are any unassigned customers left 
+## Greedy algorithm for the initial solution
+Before we start the SA algorithm we will first use a greedy heuristic to get a somewhat good initial solution. The greedy heuristic implemented here tries at each step to assign the closest customer to one vehicle until there is no more space left. If there are any unassigned customers left try to shuffle the customers between the vehicles until there is space for one.
+
+## Simulated Annealing (SA)
+After we have our initial solution given by the greedy heuristic, we will be starting the Simulated Annealing metaheuristic. At every iteration of the algorithm we will
+be getting a candidate solution and objective value by constructing a neighbourhood solution, either by swaping random customers between two random vehicles or by swaping customers between a single vehicle. If a candidate solution is better then the current one it is always accepted, else it is accepted with the probabilty function of the **metropolis criteria** which is defined by:
+
+<p align="center">
+  <img src="metropolis criteria.PNG", width = 800 />
+</p>

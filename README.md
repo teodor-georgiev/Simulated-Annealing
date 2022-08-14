@@ -1,6 +1,6 @@
 ## Simulated Annealing (SA) algorithm for the Vehicle Routing Problem (VRP)
 
-The objective of the vehicle routing problem (VRP) is to minimize the total distance
+The objective of the vehicle routing problem (VRP) is to **minimize** the total distance
 traveled by a fleet of vehicles that must visit a set of customers to satisfy their demands
 for a product. In this case of the problem we have the following constraints and information:
 - A route starts and ends at the depot
@@ -21,3 +21,8 @@ After we have our initial solution given by the greedy heuristic, we will be sta
 <p align="center">
   <img src="metropolis criteria.PNG", width = 800 />
 </p>
+With:
+
+- $s$ current solution
+- $s^{′}$ candidate solution
+- $T$ Temperature

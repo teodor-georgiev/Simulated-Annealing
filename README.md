@@ -2,13 +2,13 @@
 
 The objective of the Vehicle Routing Problem (VRP) is to minimize the total distance traveled by a fleet of vehicles while satisfying the demands of a set of customers. The problem has the following constraints and information:
 
-• A route must start and end at the depot.
-• All vehicles must be utilized.
-• All vehicles have the same capacity.
-• Each customer can only be served by one vehicle.
-• Each customer has a varying demand.
-• The order of the customers on a route is irrelevant.
-• The objective is to minimize the total distance covered by all vehicles.
+- A route must start and end at the depot.
+- All vehicles must be utilized.
+- All vehicles have the same capacity.
+- Each customer can only be served by one vehicle.
+- Each customer has a varying demand.
+- The order of the customers on a route is irrelevant.
+- The objective is to minimize the total distance covered by all vehicles.
 
 To solve this problem, we will use a metaheuristic called Simulated Annealing (SA), which is a probabilistic technique for approximating the global optimum of a given function.
 

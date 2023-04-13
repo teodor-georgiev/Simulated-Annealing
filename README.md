@@ -1,17 +1,16 @@
 ## Simulated Annealing (SA) algorithm for the Vehicle Routing Problem (VRP)
 
-The objective of the vehicle routing problem (VRP) is to **minimize** the total distance
-traveled by a fleet of vehicles that must visit a set of customers to satisfy their demands
-for a product. In this case of the problem we have the following constraints and information:
-- A route starts and ends at the depot
-- All vehicles must be used
-- All vehicles have the same capacity
-- A customer can only be served by one vehicle
-- Each customer has a varying demand
-- The order of the customers on a route is not important
-- The objective is to minimize the sum of the distance covered by all vehicles
+The objective of the Vehicle Routing Problem (VRP) is to minimize the total distance traveled by a fleet of vehicles while satisfying the demands of a set of customers. The problem has the following constraints and information:
 
-To solve this problem, we will use a __metaheuristic__ known as Simulated Annealing (SA) which is a probabilistic technique for approximating the global optimum of a given function.
+• A route must start and end at the depot.
+• All vehicles must be utilized.
+• All vehicles have the same capacity.
+• Each customer can only be served by one vehicle.
+• Each customer has a varying demand.
+• The order of the customers on a route is irrelevant.
+• The objective is to minimize the total distance covered by all vehicles.
+
+To solve this problem, we will use a metaheuristic called Simulated Annealing (SA), which is a probabilistic technique for approximating the global optimum of a given function.
 
 ## Greedy algorithm for the initial solution
 Before we start the SA algorithm we will first use a greedy heuristic to get a somewhat good initial solution. The greedy heuristic implemented here tries at each step to assign the closest customer to one vehicle until there is no more space left. If there are any unassigned customers left try to shuffle the customers between the vehicles until there is space for one.
